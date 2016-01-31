@@ -1,0 +1,317 @@
+/* ============= Background Styles ============== */
+
+.bg-white-light {
+    background-color: rgba(255,255,255,0.3);
+}
+
+
+.bg-white-medium {
+    background-color: rgba(255,255,255,0.5);
+}
+
+.bg-white-dark {
+    background-color: rgba(255,255,255,0.8);
+}
+
+.bg-black-light {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.bg-black-medium {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.bg-black-dark {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* ============= Main Styles ============= */
+html, body {
+    height: 100%;
+}
+
+.row {
+    text-align: center;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar {
+    background-color: transparent;
+    margin-bottom: 0px;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar-header {
+    float: left;
+}
+
+
+.nav>li>a, .nav>li>a {
+    transition: all 0.4s ease;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    transition: all 0.4s ease;
+    color: #080808;
+    background-color: #d5d5d5;
+}
+
+.navbar-right {
+    float: right;
+}
+
+.dropdown-menu {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dropdown-menu a {
+    color: white!important;
+}
+
+.dropdown-menu a:hover {
+    color: black!important;
+    background-color: rgba(255,255,255, 0.4)!important;
+}
+
+.main-content {
+    width: 100%;
+    height: 100%;
+    background: url(../img/hangman.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/**
+*   Sign In View Styles
+*/
+.signin-form.closed {
+    transition: all 2s ease;
+}
+.signin-form.open {
+    opacity: 1;
+    transition: all 2s ease;
+    transform: scale(1);
+}
+.signin-form {
+    opacity: 0;
+    transform: scale(0.7);
+    width: 100%;
+    height: 100%;
+}
+
+.signin-form, .signin-form input {
+    background-color: rgba(0, 0, 0, 0.7)!important;
+    padding: 25px;
+    color: white;
+}
+
+.signin-form h2 {
+    text-align: center;
+}
+
+.signin-form .btn {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.btn-sign-in {
+    float: left;
+}
+
+/*.key-wrapper {*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*margin: -90px -294px;*/
+/*}*/
+/*.row {text-align: center;}*/
+/*.key {*/
+    /*margin: 3px 1px;*/
+    /*width: 50px;*/
+    /*height: 50px;*/
+    /*border: 2px solid #333;*/
+    /*border-radius: 5px;*/
+    /*display: inline-block;*/
+    /*line-height: 52px;*/
+    /*text-align: center;*/
+    /*text-transform: uppercase;*/
+    /*-webkit-transition: .5s;*/
+    /*-moz-transition: .5s;*/
+    /*-o-transition: .5s;*/
+    /*-ms-transition: .5s;*/
+    /*transition: .5s;*/
+/*}*/
+/*.k32 {*/
+    /*width: 346px;*/
+/*}*/
+/*.active {*/
+    /*border: 2px solid #fd0;*/
+    /*color: #fd0;*/
+    /*-webkit-transition: 0s;*/
+    /*-moz-transition: 0s;*/
+    /*-ms-transition: 0s;*/
+    /*transition: 0s;*/
+/*}*/
+/*.keyboard {*/
+    /*margin-top: 400px;*/
+    /*position: relative;*/
+/*}*/
+
+.play-button {
+    cursor: pointer;
+}
+
+.word {
+    letter-spacing: 0.3em;
+}
+
+/* HOME PHP */
+
+.home-section {
+    height: 100%;
+    padding-top: 100px;
+    background-image: url(../img/pattern.jpg);
+}
+
+.btn-play-game, .msg {
+    color: white;
+    margin-top: 40px;
+    padding: 25px;
+    font-size: 1.4em;
+    border-radius: 0px;
+    transition: transform 0.4s ease;
+}
+
+.msg {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.btn-play-game {
+    background-color: rgba(142,27,27,0.8);
+}
+
+.btn-play-game:hover {
+    transition: transform 0.4s ease;
+    transform: scale(1.1);
+    background-color: rgba(142,27,27,0.9);
+}
+
+.btn-play-game a, .btn-play-game a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.key.disabled {
+    background-color: rgb(126, 80, 78);
+}
+
+/**
+*   Games View Styles
+*/
+
+.container-games {
+    padding: 0;
+    min-height: 100%;
+    background-image: url(../img/games.jpg);
+}
+
+.container-words {
+    padding: 0;
+    min-height: 100%;
+    background-image: url(../img/words.jpg);
+}
+
+.panel-games, .panel-words {
+    background-color: transparent;
+}
+
+.panel-games .panel-heading, .panel-words .panel-heading {
+    border-radius: 0;
+}
+
+.input-group-btn .btn {
+    font-size: 20px;
+}
+
+.form-container {
+    margin-top: 150px;
+    color: white;
+}
+
+.panel-games, .panel-words {
+    padding-top: 120px;
+    color: white;
+}
+
+.panel-games #delete, .panel-words #delete, .panel-words #edit {
+    border-radius: 0;
+}
+
+.panel-games #delete a, .panel-words #delete a, .panel-words #delete a {
+    color: black;
+}
+
+.num-tries {
+    text-align: center;
+}
+
+.tries {
+    border-radius: 10px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: rgba(255,255,255,0.9);
+    box-shadow: inset 0px 0px 5px 2px rgba(93, 94, 95, 0.5),
+    0px 0px 10px rgba(177, 180, 181, 0.5);
+}
+
+.tries-left {
+    background-color: #fff;
+}
+
+.tries-used {
+    background-color: #F53672;
+}
+/**
+*   Pagination Styles
+*/
+
+.pagination>li>a, .pagination>li>span {
+    background-color: transparent;
+    color: white;
+}
+
+.pagination-container {
+    text-align: center;
+}
+
+/**
+*   Insert Word Styles
+*/
+
+.container-insert {
+    min-height: 100%;
+    background-image: url(../img/words-insert.jpg);
+}
+
+.container-words {
+    text-align: center;
+}
+
+.btn-back {
+    color: #fff;
+}
+
+.btn-back:hover {
+    color: #fff;
+}
